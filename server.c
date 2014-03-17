@@ -124,23 +124,5 @@ int main(int argc, char const *argv[]) {
     }
   }
 
-  /*while (1) {
-    addr_size = sizeof their_addr;
-    if ((newfd = accept(listener, (sockaddr *)&their_addr, &addr_size)) == -1) {
-      perror("Accept error");
-      return 2;
-    }
-    printf("Connection recieved!\n");
-
-    if (!fork()) {
-      close(listener);
-      recv(newfd, buf, BUFSIZE, 0);
-      send(newfd, buf, BUFSIZE, 0);
-      close(newfd);
-      exit(0);
-    }
-    close(newfd);
-  }*/
-
   return 0;
 }
