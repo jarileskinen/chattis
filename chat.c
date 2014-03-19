@@ -67,7 +67,6 @@ int main(int argc, const char *argv[])
       perror("select");
       return 1;
     }
-    printf("Select done\n");
 
     if (FD_ISSET(STDIN_FILENO, &readfs)) {
       fgets(buf, BUFSIZE, stdin);

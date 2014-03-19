@@ -148,7 +148,7 @@ int accept_connection(int listener) {
 
 void close_connection(int fd, int nbytes) {
   if (nbytes == 0) {
-    printf("Closed socket %d", fd);
+    printf("Closed socket %d\n", fd);
   } else {
     perror("recv");
   }
